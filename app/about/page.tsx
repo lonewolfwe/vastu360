@@ -10,7 +10,7 @@ export default function About() {
         {/* Hero Section */}
         <section className="py-16 bg-gradient-to-r from-green-400 via-blue-500 to-purple-600 text-white">
           <div className="container mx-auto px-4 text-center">
-            <h1 className="text-5xl font-bold mb-4">About VastuAI</h1>
+            <h1 className="text-5xl font-bold mb-4">About Vastu360</h1>
             <p className="text-xl max-w-2xl mx-auto">
               Blending the wisdom of ancient Vastu principles with the power of AI, VastuAI transforms your living spaces into harmonious, balanced environments.
             </p>
@@ -24,7 +24,7 @@ export default function About() {
               <div className="md:w-1/2 mb-8 md:mb-0">
                 <Image
                   src="/about-image.jpg"
-                  alt="VastuAI Team"
+                  alt="Vastu360 Team"
                   width={500}
                   height={300}
                   className="rounded-lg shadow-lg"
@@ -33,7 +33,7 @@ export default function About() {
               <div className="md:w-1/2 md:pl-8">
                 <h2 className="text-4xl font-bold mb-4">Who We Are</h2>
                 <p className="text-lg mb-4">
-                  At VastuAI, we believe in combining tradition with innovation. Our team of Vastu experts and AI specialists is dedicated to helping you achieve balance and positivity in your spaces.
+                  At Vastu360, we believe in combining tradition with innovation. Our team of Vastu experts and AI specialists is dedicated to helping you achieve balance and positivity in your spaces.
                 </p>
                 <p className="text-lg">
                   With a user-friendly platform and cutting-edge technology, we make Vastu principles accessible, affordable, and actionable for everyone.
