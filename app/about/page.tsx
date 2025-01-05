@@ -24,7 +24,7 @@ export default function About() {
               <div className="md:w-1/2 mb-8 md:mb-0">
                 <Image
                   src="/about-image.jpg"
-                  alt="VastuAI Team"
+                  alt="Vastu360 Team"
                   width={500}
                   height={300}
                   className="rounded-lg shadow-lg"
@@ -33,6 +33,7 @@ export default function About() {
               <div className="md:w-1/2 md:pl-8">
                 <h2 className="text-4xl font-serif font-bold mb-4">Who We Are</h2>
                 <p className="text-lg mb-4">
+                  At Vastu360, we believe in combining tradition with innovation. Our team of Vastu experts and AI specialists is dedicated to helping you achieve balance and positivity in your spaces.
                   At Vastu360, we believe in combining tradition with innovation. Our team of Vastu experts and AI specialists is dedicated to helping you achieve balance and positivity in your spaces.
                 </p>
                 <p className="text-lg">
