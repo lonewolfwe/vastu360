@@ -10,12 +10,12 @@ export function Header() {
           <Link href="/" className="flex items-center">
             <Image
               src="/logo.png"
-              alt="VastuAI Logo"
+              alt="Vastu360 Logo"
               width={40}
               height={40}
               className="rounded-full"
             />
-            <span className="ml-2 text-xl font-bold text-gray-800">VastuAI</span>
+            <span className="ml-2 text-xl font-bold text-gray-800">Vastu360</span>
           </Link>
 
           {/* Navigation */}
