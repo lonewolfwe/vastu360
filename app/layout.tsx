@@ -5,7 +5,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Vastu Blueprint",
+  title: "Vastu 360",
   description: "Suggests a comprehensive Vastu analysis",
 };
 

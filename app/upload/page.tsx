@@ -54,8 +54,7 @@ export default function Home() {
     try {
       const imageParts = await fileToGenerativePart(image);
       const result = await model.generateContent([ 
-        `Analyze the provided house layout image and generate a concise Vastu Dosha report with the following details:
-Directional Orientation: Briefly evaluate the main entrance, room placement, and their intended usage based on Vastu principles.
+        `Analyze the provided house layout image and generate a concise Vastu Dosh:
 Vastu Doshas: Identify any flaws or imbalances in the layout, highlighting key areas of concern.
           ${additionalPrompt}`,
         imageParts,
@@ -138,7 +137,7 @@ Vastu Doshas: Identify any flaws or imbalances in the layout, highlighting key a
       </div>
       <Button
         onClick={() => setShowModal(false)}
-        disabled={uploadProgress < 50}
+        disabled={uploadProgress < 30}
         className="w-full bg-black hover:bg-gray-800 text-white mt-6"
       >
         Proceed
