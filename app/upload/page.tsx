@@ -1,6 +1,6 @@
 'use client';
 
-import Image from 'next/image';
+
 import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
 import { Button } from '@/components/ui/button';
@@ -20,7 +20,6 @@ export default function Home() {
   const [activeTab, setActiveTab] = useState('upload');
   const [paymentScreenshot, setPaymentScreenshot] = useState<File | null>(null);
   const [uploadProgress, setUploadProgress] = useState(0);
-  const [showModal, setShowModal] = useState(true);
 
   const handleImageUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
@@ -30,13 +29,6 @@ export default function Home() {
     }
   };
 
-  const handlePaymentScreenshotUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const file = e.target.files?.[0];
-    if (file) {
-      setPaymentScreenshot(file);
-      simulateUploadProgress();
-    }
-  };
 
   const simulateUploadProgress = () => {
     setUploadProgress(0);
