@@ -108,51 +108,7 @@ Vastu Doshas: Identify any flaws or imbalances in the layout, highlighting key a
   return (
     <div className="min-h-screen flex flex-col bg-[#F5F5F5]"> {/* Earthy light background */}
       <Header />
-      {showModal && (
-  <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
-    <div className="bg-white p-6 rounded-lg shadow-lg max-w-md w-full">
-      <h2 className="text-2xl font-serif text-center mb-4 text-[#6A4E23]">Payment Required</h2>
-      <Image
-        src="/path-to-popup-image.jpeg" // Replace with the actual path to your image
-        alt="Payment Required"
-        width={400}
-        height={300}
-        className="mx-auto"
-      />
-      <p className="text-gray-700 mt-4 text-center">
-        To access your detailed Vastu report, please pay a minimal amount of <span className="text-green-600 font-bold">₹299</span>.
-      </p>
-      <p className="text-gray-700 mt-2 text-center">
-        Upload your payment screenshot to proceed.
-      </p>
-      <div className="mt-6">
-        <Label htmlFor="payment-upload" className="text-lg font-medium text-gray-700">
-          Upload Screenshot
-        </Label>
-        <Input
-          id="payment-upload"
-          type="file"
-          accept="image/*"
-          onChange={handlePaymentScreenshotUpload}
-          className="mt-2"
-        />
-        {paymentScreenshot && (
-          <div className="mt-4">
-            <p className="text-sm text-gray-500">File: {paymentScreenshot.name}</p>
-            <Progress value={uploadProgress} className="w-full mt-2" />
-          </div>
-        )}
-      </div>
-      <Button
-        onClick={() => setShowModal(false)}
-        disabled={uploadProgress < 30 || !paymentScreenshot} // Ensure it's disabled if no screenshot is uploaded or progress is less than 30%
-        className={`w-full text-white mt-6 ${uploadProgress < 30 || !paymentScreenshot ? 'bg-gray-500 cursor-not-allowed' : 'bg-[#6A4E23] hover:bg-[#4E3B1F]'}`}
-      >
-        Proceed
-      </Button>
-    </div>
-  </div>
-)}
+
 
       <main className="flex-grow container mx-auto px-4 py-12">
         <h1 className="text-4xl font-serif text-[#6A4E23] mb-8 text-center">VastuAI Analysis</h1>
