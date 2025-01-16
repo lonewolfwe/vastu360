@@ -53,8 +53,13 @@ export default function Home() {
     try {
       const imageParts = await fileToGenerativePart(image);
       const result = await model.generateContent([ 
-        `Analyze the provided house layout image and generate a concise Vastu Dosh:
-Vastu Doshas: Identify any flaws or imbalances in the layout, highlighting key areas of concern.
+        `Analyze the provided house layout image. Identify any potential Vastu Doshas related to the placement of rooms
+         (bedrooms, kitchen, bathrooms, living room), entryways, and cardinal directions.
+         This prompt is:
+         Concise: It focuses on the most common and significant aspects of Vastu analysis.
+         Specific: It clearly defines the areas of concern.
+         Direct: It avoids unnecessary words and gets straight to the point.
+         and  no potential Vastu Doshas should be given
           ${additionalPrompt}`,
 
         imageParts,
